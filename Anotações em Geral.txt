@@ -1,0 +1,158 @@
+sinal de "+" no java, se number + number função de adição  
+sinal de "+" no java, se string + string função de concatenação.
+
+    var n1= parseInt(prompt('Digite um numero'))// numero 6
+    var n2= parseInt(prompt(' Digite outro numero'))// numero 4
+Caracteristica do comando prompt é retornar uma string, fazendo-se necessário converção para numero inteiro ou decimal, conforme a ocasião
+
+Convereção com comndos: parseInt para inteiros e  parseFloat para fracionados
+    var S= (n1 + n2) 
+    alert('a soma é, ' + S) // É 10
+-------------------------------------------------------------------------
+
+Em casos genéricos pode-se converter com comando: apenas "number"
+Teste o mesmo exemplo com numeros variasdo entre inteiro e decimal
+    var n1= Number(prompt('Digite um numero'))// numero 6
+    var n2= Number(prompt(' Digite outro numero'))// numero 4.5
+    var S= (n1 + n2) 
+    alert('a soma é, ' + S) // É 10,5
+-------------------------------------------------------------------------
+
+A conversão de número para string pode se usar omesmo conceito "string(s)"*/
+
+    Ex.:
+        
+    alert('a soma é, ' + String(s))*/
+-------------------------------------------------------------------------
+    Templats Strigs--------*/     
+    EXEMPLO;
+    
+    var JS= 'JavaScript'                
+    'Eu estou aprendendo JS' // não faz interpolação
+    'Eu estou aprendendo' + JS // usa concatenação
+    `Eu estou aprendendo ${JS}` // usa templete string escrito com crase 
+       
+Veja como ficaria mais limpa a resposta do exemplo acima;
+
+    alert(`A soma entre ${n1} e ${n2} é igual à ${S}`)
+-------------------------------------------------------------------------
+
+CONVERÇÃO DE MOEDAS
+
+    EXEMPLO:
+
+    >n1 = 1545.5
+    1545.5
+    >n1.toFixed(2)  //obs. aumenta casas depois do ponto  
+    '1545.50'
+    >n1.toFixed(2).replace('.',',')  //obs. substitui ponto por virgula
+    '1545,50'
+
+    IMPORTANTÍSSIMO o comando abaixo
+    >n1.toLocaleString('pt-br', (style, 'currency', currency: 'BRL'))
+    'R$ 1.545,50'
+-------------------------------------------------------------------------
+
+OPERADORES;
+
++  é adição
+-  é subtração
+*  é multiplicação
+/  é divisão
+%  é porcentagem
+** é potencia
+
+Ondem de Precedência 
+
+()
+**
+* / %
++ -
+
+Atribuição Simples
+
+var a = 5+3     =   8
+var b = a%5     =   3 (8/5 = 8 - "5*1" = 5 = sendo então 8 - 5= 3)     
+var c = 5*b**2  =  45 Resolve-se primeiro a potência b**2= 3*3=9 = 9*5 
+var d = 10-a/2  =   6 Resolve-se primeiro a divisão a/2= 8/2=4 =10-4 
+var e = 6*2/d   =   2 Ordem indiferente 6*2=12/d= 12/6 
+var f = b%e+4/e =   3 Resolve-se a porcentagem e divisão 3/2+4/2=1+2 
+
+Auto Atribuição
+
+var n = 3
+n= n+4
+n passa a valor 7
+
+Simplifiucando Atribuição
+
+var n = 3
+n= n+4
+simplificada fica
+n+=4
+
+Incremento
+
+var x = 5
+
+OPERADORES RELACIONÁRIOS
+>   Maior
+<   Menor
+>=  maior ou igual
+<=  menor ou igual
+==  igual
+!=  diferente
+=== identico
+
+5 >  2  = true
+7 <  4  = false
+8 >= 8  = true
+9 <= 7  = false
+5 == 5  = true
+4 != 4  = false
+
+IDENTIDADE
+
+EXEMPLO
+
+5 ==  5 =  é true  e 5 == '5' =  Também é true,  pois sinais de igualdade não testa o tipo
+
+5 === '5' = false 
+
+OPERADORES LÓGICOS
+
+    !  esclamação   negação     operador unário (ou é verdadeiro ou falso)
+
+    && ecomercial   conjunção   operador conjunção (binário que possuem 2 valores lógicos)
+
+    || payps        disjunções
+ORDEM DE OPERAÇÃO GERAL
+primeiro    os ARITMÉTICOS
+depois      os RELACIONAIS
+depois      os LÓGICOS
+
+OPERADORES TERNÁRIOS
+
+? Interogção
+: 2 pontos
+
+exemplo 1 
+
+TESTE ? TRUE : FALSE 
+ ou
+media>7.0 ? "aprovado" : "reprovado"
+
+O siguinificado litera É
+
+se a média for maio que 7.0  ENTÃO esta "aprovado" SENÃO esta "reprovado "
+
+Neste caso "?" ganha ton de se SIM e ":" ganha ton de CASO CONTRÁRIO 
+
+OUTRO EXEMPLO
+
+> idade = 18
+> w = idade >= 19?'maior':'menor' "siguinifica : IDADE (18) é >= que 19, se sim 'MAIOR' se NÃO 'MENOR'  
+> 'menor'
+
+
+
